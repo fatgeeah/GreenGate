@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content h2{
+    font-size: 45px;
+    font-weight: 600;
+    font-style:oblique;
+    color: rgb(11, 126, 69);
+}
+.contact-form{
+    width: 600px;
+    margin-right: 25px;
+    background: rgb(11, 126, 69);
+}
+.input, textarea{
+      width: 500px;
+      background-color:rgba(248, 245, 245, 0.825);
+      border: none;
+      padding: 0.5rem;
+}
+.input:focus,
+textarea:focus{
+    outline:none;
+}
+.tag{
+    padding: 5px 0;
+    font-weight: 600;
+    font-style:oblique;
+    font-size: 25px;
+}
+.container{
+padding: 2rem;
+border-radius: 10px;
+overflow: none;
+display: flex;
+width: 500px;
+margin-left: 500px;
+}
+.submit-btn{
+    background-color: rgb(201, 199, 199);
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+}
+.submit-btn:hover{
+    background-color: rgb(11, 126, 69);
+    color:white;
+    font-size: 25px;
+}
+.image h3{
+    color:  rgb(11, 126, 69);
+    font-size: 25px;
+    font-weight: 700;
+    font-style: oblique;
+}

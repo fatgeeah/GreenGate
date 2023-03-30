@@ -1,0 +1,102 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green Gate's faq</title>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'help4.css'%}">
+</head> 
+<body>  
+  
+  <nav class="navbar navbar-dark bg-success text-bg-info p-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Green Gate<label class="logoo"><img src="{% static 'carts (1).png' %}"></label></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+           <li class="nav-item">
+            <a class="nav-link" href={% url 'about'%} "About.html">About Green Gate</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href={% url 'contact'%} "Contact.html">Contact Green Gate</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href={% url 'help'%} "Help.html">Green Gate's FAQs</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More options
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href={% url 'login'%} "Login.html">Login</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href={% url 'register'%} "Signup.html">Register</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<section>
+    <br><br><br>
+<center><h2 class="title">Green Gate's FAQs</h2><center>
+  <br>
+<div class="faq">
+    <div class="question">
+        <h3>What is the guest mode for...?</h3>
+        
+      <svg = width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3l21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+      <svg>
+    </div>
+     <div class="answer">
+        <p>
+            The guest mode allows you to view avaliable products before registering so that you will know whether or not Green Gate is proving the products you are looking for.So only register user will be able to purchase the items on dislpay,therefore guest mode is a view-only mode.  
+        </p>    
+</div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h3>Why are you not allow to purchase products in guest mode for...?</h3>
+        
+      <svg = width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3l21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+      <svg>
+    </div>
+     <div class="answer">
+        <p>
+            Products can not be purchase in guest mode because you are not a registered  user so there won't be any place for your orders to be stored online as you have not created a profile to store your information.   
+        </p>    
+</div>
+</div>
+
+<div class="faq">
+    <div class="question">
+        <h3>How do I register...?</h3>
+        
+      <svg = width="15" height="10" viewBox="0 0 42 25">
+        <path d="M3 3l21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+      <svg>
+    </div>
+     <div class="answer">
+        <p>
+            You have to fill in all the information that is required and make sure that they are valid 
+        </p>    
+</div>
+</div>
+
+</section>
+<script src="{% static 'help.js' %}"></script>
+</body>
+</html>

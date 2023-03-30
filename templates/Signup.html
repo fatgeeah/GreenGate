@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ 
+    <head>
+        <meta charset="UTF-8">
+        <title>Green Gate Website</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+               {% load static%}
+        <link rel="stylesheet" href="{% static 'register2.css' %}">
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+            <label class="logo">Green Gate <img src="{% static 'carts (1).png' %}"></label>
+            <ul>
+                <li><a class="active" href={% url 'home'%} "index.html">Home</a></li>
+                <li><a href={% url 'about'%} "About.html">About Us</a></li>
+                <li><a href={% url 'contact'%} "Contact.html">Contact</a></li>
+                <li><a href={% url 'login'%} "Login.html">Login</a></li>
+            </ul>
+        </nav>
+        <br><br><br>
+        <div class="center"> 
+          <br>
+            <h2>Customer Registeration</h2>
+            <br>
+            <form action="" method="post">   
+              {% csrf_token %}
+            <div class="txt_field">
+                <input type="text" name="Username" id="Username" required="required">
+                <label>Create a username</label>
+                <br>
+              </div>
+              
+             <div class="txt_field">
+                <input type="email" name="Email address" id="Email address" required="required">
+                <label>Enter Valid Email address</label>
+                <br>
+              </div>
+
+              <div class="txt_field">
+                <input type="password" name="pass1" id="pass1" required="required">
+                <label> Create password</label>
+                <br>
+              </div>
+
+              <div class="txt_field">
+                <input type="password" name="pass2" id="pass2" required="required">
+                <label>Confirm password</label>
+                <br>
+              </div>
+              <br>
+             <input type="submit" value="Register">
+             <br><br><br>
+             <div class="login_link"> <p>Already a memeber ? <a href ={% url 'login'%} "Login.html">Login</a></p>
+             </div>  
+             <div class="or_link"><p>OR</p></div> 
+             <div class="guest_link"> <p>Continue as Guest...  <a href ={% url 'guest'%} "Guest.html" >Guest Mode</a></p>
+
+           </form>
+       </div>
+    </body>
+    </html>   

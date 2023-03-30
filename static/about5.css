@@ -1,0 +1,75 @@
+body{
+    font-family: sans-serif;
+    background:linear-gradient(#ffffff,#90ffa4);
+    margin: 0;
+    padding: 0;
+    height:160vh ;
+    width:100%;
+}
+.hero{
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+}  
+label.logoo{
+    color: whitesmoke;
+    font-size: 30px;
+    line-height: 70px;
+    font-weight: bold;
+    margin-right: 1100px;
+}
+.header h1{
+    color: rgb(7, 60, 7);
+    font-size: 40px;
+    }
+    .hero{
+        position: relative;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+    .content{
+        position: relative;
+        z-index: 10 ;
+        text-align: center;
+    }   
+    .content h2{
+        margin-top: -8px;
+        font-size: 50px;
+        color: rgb(4, 44, 4);
+        font-weight: 40;
+        transition: 0.3s;
+    }
+    .content p{
+        text-decoration: none;
+        display: inline-block;
+        color:rgb(89, 89, 89);
+        font-size: 35px;
+        padding: 14px 70px;
+        border-radius: 50px;
+        margin-top: 20px ;
+    }
+    .Lero h2{
+        font-size: 50px;
+        font-style:italic;
+    }
+    .logo{
+        margin-left:40px ;
+        color: rgb(0, 0, 0);
+        font-size: 60px;
+        letter-spacing: 1px;
+        cursor: pointer; 
+    }
+    span{
+        color: green;
+        
+    }   
+    .content li {
+        font-size: 30px;
+        color: black;
+    } 
+    .h3 {
+    color: red;
+     }
