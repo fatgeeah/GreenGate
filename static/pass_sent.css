@@ -1,0 +1,30 @@
+.center h2{
+    font-size: 50px;
+    font-weight: 700;
+    font-style: bold;
+    color:rgb(11, 126, 69);
+    margin-left: 500px;
+}
+.center p{
+    font-size: 35px;
+    font-weight: 600;
+    font-style: bold; 
+    margin-left: 150px;
+}
+.cancel{
+    margin: 20px 0;
+    margin-left: 1000px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: bold; 
+    color: black;
+}
+.cancel a{
+    color:rgb(11, 126, 69);
+    text-decoration: none;
+}
+.cancel a:hover{
+    font-size: 45px;
+    text-decoration: underline;
+}

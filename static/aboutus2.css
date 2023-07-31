@@ -1,0 +1,68 @@
+body{
+    font-family: sans-serif;
+    background:rgba(255, 255, 255, 0.757);
+    margin: 0;
+    padding: 0;
+    height:190vh ;
+    width:100%;
+}
+.hero{
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+}  
+label.logoo{
+    color: whitesmoke;
+    font-size: 30px;
+    line-height: 70px;
+    font-weight: bold;
+    margin-right: 1100px;
+}
+.header h1{
+    color: rgb(4, 44, 4);
+    font-size: 40px;
+    }
+    .hero{
+        position: relative;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+    .content{
+        position: relative;
+        z-index: 10 ;
+        text-align: center;
+    }   
+    .content h2{
+        margin-top: -8px;
+        font-size: 50px;
+        color: rgb(4, 44, 4);
+        font-weight: 40;
+        transition: 0.3s;
+    }
+    .content p{
+        text-decoration: none;
+        display: inline-block;
+        color:black;
+        font-size: 35px;
+        padding: 14px 70px;
+        border-radius: 50px;
+        margin-top: 20px ;
+    }
+    .logo{
+        margin-left:40px ;
+        color: black;
+        font-size: 60px;
+        letter-spacing: 1px;
+        cursor: pointer; 
+    }
+    span{
+        color: rgb(4, 44, 4);
+        
+    }   
+    .content li {
+        font-size: 30px;
+        color: black;
+    } 

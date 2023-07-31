@@ -1,0 +1,139 @@
+body{
+    font-family: sans-serif;
+    background:white;
+    margin: 0;
+    padding: 0;
+    height:100vh ;
+    overflow: hidden;
+}
+nav{
+    background-color: rgb(11, 126, 69);
+    height :80px;
+    width:100%;
+}
+
+nav ul{
+    float: right;
+    margin-left: -30px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    list-style: name;
+    line-height: 80px;
+    display: inline-block;
+}
+nav ul li a{
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 9px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background-color:black;
+    color: white;
+ }
+#check{
+    display:none
+}
+label.logo{
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 70px;
+    padding: 0 100px;
+    font-weight: bold;
+    margin-right: 70px;
+}
+.box-element{
+	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
+    background: rgb(11, 126, 69) ;
+	border-radius: 4px;
+	padding: 10px;
+    width :800px;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    margin-left: 400px;
+    margin-top: 80px;
+}
+.box-element a{
+    color: white;
+    font-size: 22px;
+    font-style: bold;
+    font-weight: 800px;
+}
+
+.thumbnail{
+	width: 100%;
+	height: 200px;
+	-webkit-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+    -moz-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+    box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+}
+
+.product{
+	border-radius: 0 0 4px 4px;
+}
+.col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12{
+	margin-top: 10px;
+}
+
+.btn{
+	border-radius: 0;
+}
+.row-image{
+	width: 100px;
+}
+
+.form-field{
+	width:250px;
+	display: inline-block;
+	padding: 5px;
+}
+
+.cart-row{
+	display: flex;
+    align-items: flex-stretch;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+
+}
+
+.quantity{
+	display: inline-block;
+	font-weight: 600;
+    font-size: 22px;
+	padding-right:10px;
+    margin-top: -50px;
+}
+
+.chg-quantity{
+	width: 12px;
+	cursor: pointer;
+	display: block;
+	margin-top: 5px;
+	transition:.1s;
+}
+
+.chg-quantity:hover{
+	opacity: .6;
+}
+.hidden{
+	display: none!important;
+}
+
+.table h3{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.table h5 {
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+}
