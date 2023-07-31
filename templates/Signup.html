@@ -24,7 +24,7 @@
             </ul>
         </nav>
 
-        {% if messages %}
+        {% comment %} {% if messages %}
         <ul class="messages">
             {% for message in messages %}
                 <li class="{{ message.tags }}">
@@ -32,7 +32,7 @@
                     <a onclick="window.location.reload()"; href="#" class="close">X</a>
             {% endfor %}
         </ul>
-    {% endif %}
+    {% endif %} {% endcomment %}
     
 
         <br><br><br>

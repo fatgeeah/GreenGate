@@ -17,13 +17,15 @@ def GuestPage(request):
 
 def ContactPage(request):
     if request.method =="POST":
-        name = request.POST.get('full-name')
+        fname = request.POST.get('first-name')
+        lname = request.POST.get('last-name')
         email = request.POST.get('email')
         subject = request.POST.get('subject')
         message = request.POST.get('message')
 
         data = {
-            'name' :name,
+            'First name' :fname,
+            'Last name' :lname,
             'email' :email,
             'subject' : subject,
             'message' : message
