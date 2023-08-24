@@ -224,7 +224,7 @@
               <div class="or_link"><p>OR</p></div> 
               <div class="guest_link"> <p>Continue as Guest...  <a href ={% url 'guest'%} "Guest.html" >Guest Mode</a></p>
              
-               
+               /..
             </form>
         </div>
             </body>
