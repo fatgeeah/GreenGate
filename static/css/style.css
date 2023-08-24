@@ -1,0 +1,90 @@
+:root{
+    --color1 :  rgb(11, 126, 69);
+    --color2 :#FFF ;
+    --color3 :#FF66D8 ;
+    --color4 :#000000;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.menu_bar{
+    height: 80px;
+    background: var(--color1);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.logo{
+    margin-top: 25px;
+    color: var(--color2);
+    font-size: 30px;
+}
+.logo2{
+    margin-top: 10px;
+    margin-left: -230px;
+}
+.logo span{
+    color: var(--color4);
+}
+.menu_bar ul{
+    display: flex;
+    list-style: none;
+}
+.menu_bar ul li{
+    margin-top: 20px;
+    padding: 10px 30px;
+    position: relative;
+}
+.menu_bar ul li a{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color2);
+    transition: all 0.3s;
+}
+.menu_bar ul li a:hover{
+    color: var(--color4);
+    font-size: 25px;
+    font-weight: 600;
+}
+.dropdown_menu{
+    display: none;
+}
+.dropdown_menu ul li a {
+    color: var(--color4);
+    font-size: 20px;
+    font-weight: 600;
+}
+.dropdown_menu ul li a:hover{
+    font-weight: 800;
+    font-size: 25px;
+}
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    margin-left: 50px ;
+    top: 100%;
+    width: 230px;
+}
+.menu_bar ul li:hover .dropdown_menu ul{
+    display: block;
+    margin: 20px;
+}
+.menu_bar ul li:hover .dropdown_menu ul li{
+    width: 200px;
+    padding: 10px;
+}
+.image{
+    margin-left: 600px;
+    margin-top: 100px;
+}
+

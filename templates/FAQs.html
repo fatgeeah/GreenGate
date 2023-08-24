@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ 
+    <head>
+        <meta charset="UTF-8">
+        <title>Green Gate Website</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        {% load static%}
+        <link rel="stylesheet" href="{% static 'css/FAQs.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+    <body>
+    <div class="menu_bar">
+        <h1 class="logo">Green<span>Gate</span><h2 class="logo2"><img src="{% static 'images/shopping-cart.png' %}"></h2></h1>
+    <ul>
+    <li class="active"><a href={% url 'home'%} "index.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Green Gate</a></li>
+    <li><a href={% url 'about'%} "About.html"><i class="fa fa-building" aria-hidden="true"></i> About Green Gate</a></li>
+    <li>
+        <a href="#">Green Gate's Help <i class="fas fa-caret-down"></i></a>
+
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href={% url 'contact'%} "Contact.html">Contact Green Gate</a></li>
+                <li><a href={% url 'FAQs'%} "FAQs.html">Green Gate's FAQs</a></li>
+                <li><a href={% url 'feedback'%} "feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#"><i class="fa fa-users" aria-hidden="true"></i> Account Actions <i class="fas fa-caret-down"></i></a>
+        
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href ={% url 'guest'%} "Guest.html">Guest Mode</a></li>
+                <li><a href={% url 'login'%} "login.html">Login</a></li>
+                <li><a href={% url 'register'%} "register.html">Regitser</a></li>
+            </ul>
+        </div>
+    </li>
+    </ul>
+    </div>
+   
+    <section>
+        <br><br><br>
+    <center><h2 class="title">Green Gate's FAQs</h2><center><svg xmlns="http://www.w3.org/2000/svg" height="200px" width="200px" viewBox="0 0 200 200" class="pencil">
+        <defs>
+            <clipPath id="pencil-eraser">
+                <rect height="30" width="30" ry="5" rx="5"></rect>
+            </clipPath>
+        </defs>
+        <circle transform="rotate(-113,100,100)" stroke-linecap="round" stroke-dashoffset="439.82" stroke-dasharray="439.82 439.82" stroke-width="2" stroke="currentColor" fill="none" r="70" class="pencil__stroke"></circle>
+        <g transform="translate(100,100)" class="pencil__rotate">
+            <g fill="none">
+                <circle transform="rotate(-90)" stroke-dashoffset="402" stroke-dasharray="402.12 402.12" stroke-width="30" stroke="hsl(223,90%,50%)" r="64" class="pencil__body1"></circle>
+                <circle transform="rotate(-90)" stroke-dashoffset="465" stroke-dasharray="464.96 464.96" stroke-width="10" stroke="hsl(223,90%,60%)" r="74" class="pencil__body2"></circle>
+                <circle transform="rotate(-90)" stroke-dashoffset="339" stroke-dasharray="339.29 339.29" stroke-width="10" stroke="hsl(223,90%,40%)" r="54" class="pencil__body3"></circle>
+            </g>
+            <g transform="rotate(-90) translate(49,0)" class="pencil__eraser">
+                <g class="pencil__eraser-skew">
+                    <rect height="30" width="30" ry="5" rx="5" fill="hsl(223,90%,70%)"></rect>
+                    <rect clip-path="url(#pencil-eraser)" height="30" width="5" fill="hsl(223,90%,60%)"></rect>
+                    <rect height="20" width="30" fill="hsl(223,10%,90%)"></rect>
+                    <rect height="20" width="15" fill="hsl(223,10%,70%)"></rect>
+                    <rect height="20" width="5" fill="hsl(223,10%,80%)"></rect>
+                    <rect height="2" width="30" y="6" fill="hsla(223,10%,10%,0.2)"></rect>
+                    <rect height="2" width="30" y="13" fill="hsla(223,10%,10%,0.2)"></rect>
+                </g>
+            </g>
+            <g transform="rotate(-90) translate(49,-30)" class="pencil__point">
+                <polygon points="15 0,30 30,0 30" fill="hsl(33,90%,70%)"></polygon>
+                <polygon points="15 0,6 30,0 30" fill="hsl(33,90%,50%)"></polygon>
+                <polygon points="15 0,20 10,10 10" fill="hsl(223,10%,10%)"></polygon>
+            </g>
+        </g>
+    </svg>
+      <br><br>
+    <div class="faq">
+        <div class="question">
+            <h3>What is the guest mode for...?</h3>
+            
+          <svg = width="15" height="10" viewBox="0 0 42 25">
+            <path d="M3 3l21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+          <svg>
+        </div>
+         <div class="answer">
+            <p>
+                The guest mode allows you to view avaliable products before registering so that you will know whether or not Green Gate is proving the products you are looking for.So only register user will be able to purchase the items on dislpay,therefore guest mode is a view-only mode, you will find the link to guest mode either below your registeration form or your login form.  
+            </p>    
+    </div>
+    </div>
+    <br>
+    <div class="faq">
+        <div class="question">
+            <h3>Why are you not allow to purchase products in guest mode for...?</h3>
+            
+          <svg = width="15" height="10" viewBox="0 0 42 25">
+            <path d="M3 3l21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+          <svg>
+        </div>
+         <div class="answer">
+            <p>
+                Products can not be purchase in guest mode because you are not a registered  user so there won't be any place for your orders to be stored online as you have not created a profile to store your information.   
+            </p>    
+    </div>
+    </div>
+    <br>
+    <div class="faq">
+        <div class="question">
+            <h3>How do I register...?</h3>
+            
+          <svg = width="15" height="10" viewBox="0 0 42 25">
+            <path d="M3 3l21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+          <svg>
+        </div>
+         <div class="answer">
+            <p>
+                You have to fill in all the information that is required and make sure that they are valid 
+            </p>    
+    </div>
+    </div>
+    <br>
+    <div class="faq">
+      <div class="question">
+          <h3>How to contact Green gate...?</h3>
+          
+        <svg = width="15" height="10" viewBox="0 0 42 25">
+          <path d="M3 3l21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+        <svg>
+      </div>
+       <div class="answer">
+          <p>
+             We provided a contact form which allows you as the user to sent emails to our gmail about anything whether its a complaint or complement in this way we are aware of our users thoughts on products and our services.We also provided a link to our social media platform.
+          </p>    
+    </div>
+    </div>
+     <br>
+    <div class="faq">
+      <div class="question">
+          <h3>How do we know what Green Gate is about...?</h3>
+          
+        <svg = width="15" height="10" viewBox="0 0 42 25">
+          <path d="M3 3l21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+        <svg>
+      </div>
+       <div class="answer">
+          <p>
+              We provided an about page which essentially explain what Green Gate is and what it has to offer.
+            </p>    
+    
+        </div>
+      </div>
+        <br>
+        <div class="faq">
+          <div class="question">
+              <h3>What to do when you forget your password...?</h3>
+              
+            <svg = width="15" height="10" viewBox="0 0 42 25">
+              <path d="M3 3l21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            <svg>
+          </div>
+           <div class="answer">
+              <p>
+                  You will have to clink on the link forget password link which will take you to a site where you will ahev to enter your username after that you will recieve an email from greengate to the email you used to register yourself with a link to add a new password.
+              </p>    
+        </div>
+        </div>
+        <div class="faq">
+          <div class="question">
+              <h3>How will you know if green gate has new products...?</h3>
+              
+            <svg = width="15" height="10" viewBox="0 0 42 25">
+              <path d="M3 3l21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            <svg>
+          </div>
+           <div class="answer">
+              <p>
+                 New products and services will be displayed on our media platforms as well as us sending out emails to our customers makimg them aware of our new offers and new products.
+              </p>    
+      </div>
+      </div>
+      </div>
+      </div>
+    
+    </section>
+    <script src= "{% static 'js/FAQs.js' %}"></script>    
+
+</body>
+</html>        

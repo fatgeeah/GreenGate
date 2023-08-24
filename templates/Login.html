@@ -6,25 +6,41 @@
         <title>Green Gate Website</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         {% load static%}
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'loginn.css' %}">
+        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     </head>
     <body>
-      <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
+    <div class="menu_bar">
+        <h1 class="logo">Green<span>Gate</span><h2 class="logo2"><img src="{% static 'images/shopping-cart.png' %}"></h2></h1>
+    <ul>
+    <li class="active"><a href="index.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Green Gate</a></li>
+    <li><a href={% url 'about'%} "About.html"><i class="fa fa-building" aria-hidden="true"></i> About Green Gate</a></li>
+    <li>
+        <a href="#">Green Gate's Help <i class="fas fa-caret-down"></i></a>
+
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href={% url 'contact'%} "Contact.html">Contact Green Gate</a></li>
+                <li><a href={% url 'FAQs'%} "FAQs.html">Green Gate's FAQs</a></li>
+                <li><a href={% url 'feedback'%} "feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <a href="#"><i class="fa fa-users" aria-hidden="true"></i> Account Actions <i class="fas fa-caret-down"></i></a>
         
-        <label class="logo">Green Gate <img src="{% static 'shopping-cart.png' %}"></label>
-        <ul>
-            <li><a class="active" href={% url 'home'%} "index.html">Home</a></li>
-            <li><a href={% url 'about'%} "About.html">About Us</a></li>
-            <li><a href={% url 'contact'%} "Contact.html">Contact</a></li>
-           <li><a href={% url 'register'%} "Signup.html">SignUp</a></li>
-        </ul>
-    </nav>
-    {% comment %} {% if messages %}
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href ={% url 'guest'%} "Guest.html">Guest Mode</a></li>
+                <li><a href={% url 'login'%} "login.html">Login</a></li>
+                <li><a href={% url 'register'%} "register.html">Regitser</a></li>
+            </ul>
+        </div>
+    </li>
+    </ul>
+    </div>
+
+    {% if messages %}
     <ul class="messages">
         {% for message in messages %}
             <li class="{{ message.tags }}">
@@ -32,39 +48,62 @@
                 <a onclick="window.location.reload()"; href="#" class="close">X</a>
         {% endfor %}
     </ul>
-{% endif %} {% endcomment %}
+{% endif %} 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-            <div class="center"> 
-              <br>
-             <h2>Customer Login</h2>
-             <br>
-             <form action="" method="post">  
-                {% csrf_token %} 
-             <div class="txt_field">
-                 <input type="text" name="username" required="required">
-                 <label>Username</label>
-                 <br>
-               </div>
-               
-               <div class="txt_field">
-                <input type="password"name="pass" required="required">
-                <label>password</label>
-                <br>
-              </div>
-              <br>
-              <input type="submit" value="Login">
-              <br><br>
-              
-              
-              <div class="signup_link"><p>Not a memeber yet?  <a href ={% url 'register'%} "Signup.html" >Register</a></div>
-                <div class="signup_link"><p><a href={% url 'reset_password'%} "password_reset_form.html">Forget Password</a></p></div>
-              <div class="or_link"><p>OR</p></div> 
-              <div class="guest_link"> <p>Continue as Guest...  <a href ={% url 'guest'%} "Guest.html" >Guest Mode</a></p>
-             
-               
-            </form>
-        </div>
-            </body>
-    </html>   
+        {% if code %}
+        <form class="form">
+          <p class="heading">Verify</p>
+          <svg class="check" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="60px" viewBox="0 0 60 60" xml:space="preserve">  <image id="image0" width="60" height="60" x="0" y="0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAQAAACQ9RH5AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+        AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZ
+        cwAACxMAAAsTAQCanBgAAAAHdElNRQfnAg0NDzN/r+StAAACR0lEQVRYw+3Yy2sTURTH8W+bNgVf
+        aGhFaxNiAoJou3FVEUQE1yL031BEROjCnf4PLlxILZSGYncuiiC48AEKxghaNGiliAojiBWZNnNd
+        xDza3pl77jyCyPzO8ubcT85wmUkG0qT539In+MwgoxQoUqDAKDn2kSNLlp3AGi4uDt9xWOUTK3xg
+        hVU2wsIZSkxwnHHGKZOxHKfBe6rUqFGlTkPaVmKGn6iYao1ZyhK2zJfY0FZ9ldBzsbMKxZwZjn/e
+        5szGw6UsD5I0W6T+hBhjUjiF7bNInjz37Ruj3igGABjbtpIo3GIh30u4ww5wr3fwfJvNcFeznhBs
+        YgXw70TYX2bY/ulkZhWfzfBbTdtrzjPFsvFI+T/L35jhp5q2owDs51VIVvHYDM9sa/LY8XdtKy1l
+        FXfM8FVN2/X2ajctZxVXzPA5TZvHpfb6CFXxkerUWTOcY11LX9w0tc20inX2mmF4qG3upnNWrOKB
+        hIXLPu3dF1x+kRWq6ysHpkjDl+7eQjatYoOCDIZF3006U0unVSxIWTgTsI3HNP3soSJkFaflMDwL
+        3OoHrph9YsPCJJ5466DyOGUHY3Epg2rWloUxnMjsNw7aw3AhMjwVhgW4HYm9FZaFQZ/bp6QeMRQe
+        hhHehWKXGY7CAuSpW7MfKUZlAUqWdJ3DcbAAB3guZl9yKC4WYLfmT4muFtgVJwvQx7T2t0mnXK6J
+        XlGGyAQvfNkaJ5JBmxnipubJ5HKDbJJsM0eY38QucSx5tJWTVHBwqDDZOzRNmn87fwDoyM4J2hRz
+        NgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wMi0xM1QxMzoxNTo1MCswMDowMKC8JaoAAAAldEVY
+        dGRhdGU6bW9kaWZ5ADIwMjMtMDItMTNUMTM6MTU6NTArMDA6MDDR4Z0WAAAAKHRFWHRkYXRlOnRp
+        bWVzdGFtcAAyMDIzLTAyLTEzVDEzOjE1OjUxKzAwOjAwIIO3fQAAAABJRU5ErkJggg=="></image>
+        </svg>
+          <div class="box">
+          <input class="input" type="password" maxlength="1">
+          <input class="input" type="password" maxlength="1"> 
+          <input class="input" type="password" maxlength="1">
+          <input class="input" type="password" maxlength="1">
+          <input class="input" type="password" maxlength="1">
+          <input class="input" type="password" maxlength="1">
+          </div>
+          <button class="btn1">Submit</button>
+          <button class="btn2"><a href={% url 'home'%} "index.html">Back</a></button>
+        </form>
+        {% endif %}
+
+      <form action="" method="post" class="form">
+        {% csrf_token %}
+        <p class="title">Customer Login</p>
+        <p class="message">Login now and get full access to our app. </p>
+            <div class="flex">
+            <label>
+                <input  type="text"  name="username" id="username" required="" class="input">
+                <span>Username</span>
+            </label>
+        <label>
+            <input type="password" name="pass" id="pass" required="required" class="input">
+            <span>Password</span>
+        </label>
+      </div>  
+      <br>
+      <button class="submit">Login</button>
+      <p class="signin">Not a memeber yet?  <a href ={% url 'register'%} "Signup.html" >Register</a> </p>
+      <p class="signin">Continue as Guest... <a href ={% url 'guest'%} "Guest.html" >Guest Mode</a> </p>
+    </form>
+
+</body>
+</html> 

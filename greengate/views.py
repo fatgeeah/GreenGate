@@ -24,8 +24,11 @@ def guest(request):
 def cart(request):
      return render(request,'cart.html')
 
-def help(request):
-    return render(request,'Help.html')
+def FAQs(request):
+    return render(request,'FAQs.html')
+
+def feedback(request):
+    return render(request,'feedback.html')
 
 def contact(request):
     return render(request,'Contact.html')

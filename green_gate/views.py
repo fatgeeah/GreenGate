@@ -3,6 +3,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate ,login , logout
 from .models import *
 from django.core.mail import send_mail
+from django.contrib import messages
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 def HomePage(request):
@@ -52,21 +54,24 @@ def CartPage(request):
              context = {'items': items, 'order':order}  
           return render(request,'cart.html',context)
 
-def HelpPage(request):
-    return render (request, 'Help.html')
+def FAQsPage(request):
+    return render (request, 'FAQs.html')
 
+def FeedbackPage(request):
+    return render (request, 'feedback.html')
 
 def RegisterPage(request):
     if request.method=='POST':
-     uname=request.POST.get('Username')   
+     uname=request.POST.get('username')   
      email=request.POST.get('Email address') 
      pass1=request.POST.get('pass1') 
      pass2=request.POST.get('pass2')
      
      if pass1!=pass2:
-         return HttpResponse('Your password and conform password are not the Same!!')
+         msg = "Please make sure that both passwords are the same !"
+         messages.error(request, msg)
+         return HttpResponseRedirect(request.path)
      else:
-         
         my_user=User.objects.create_user(uname,email,pass1)
         my_user.save()
         return redirect('login')
