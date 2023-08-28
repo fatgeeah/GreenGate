@@ -6,7 +6,7 @@
         <title>Green Gate Website</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         {% load static%}
-        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+        <link rel="stylesheet" href="{% static 'css/login100.css' %}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     </head>
     <body>
@@ -102,6 +102,7 @@
       <br>
       <button class="submit">Login</button>
       <p class="signin">Not a memeber yet?  <a href ={% url 'register'%} "Signup.html" >Register</a> </p>
+      <p class="signin">Reset Password... <a href ={% url 'reset_password'%} "password_reset_form.html" >Forgot Password</a> </p>
       <p class="signin">Continue as Guest... <a href ={% url 'guest'%} "Guest.html" >Guest Mode</a> </p>
     </form>
 

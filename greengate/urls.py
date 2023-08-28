@@ -32,6 +32,7 @@ urlpatterns = [
     path('contact/', views.ContactPage, name='contact'),
     path('FAQs/', views.FAQsPage, name='FAQs'),
     path('feedback/', views.FeedbackPage, name='feedback'),
+    path('comments/', views.CommentsPage, name='comments'),
     path('cart/', views.CartPage, name='cart'),
     path('checkout/', views.CheckoutPage, name='checkout'),
     path('payment/', views.PayPage, name='payment'),

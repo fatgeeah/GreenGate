@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate ,login , logout
 from .models import *
 from django.core.mail import send_mail
+from django.conf import settings
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 
@@ -16,29 +17,18 @@ def AboutPage(request):
 def GuestPage(request):
     return render (request, 'Guest.html')
 
-
 def ContactPage(request):
     if request.method =="POST":
-        fname = request.POST.get('first-name')
-        lname = request.POST.get('last-name')
-        email = request.POST.get('email')
-        subject = request.POST.get('subject')
-        message = request.POST.get('message')
-
-        data = {
-            'First name' :fname,
-            'Last name' :lname,
-            'email' :email,
-            'subject' : subject,
-            'message' : message
-        }
-        message = '''
-        New message: {}
-
-        From {}
-        '''.format(data['message'],data['email'])
-        send_mail(data['subject'], message, '',['fatgeeahminkis@gmail.com'])
-        return HttpResponse('Your email has successfully been sent !')
+        fname = request.POST['first-name']
+        email = request.POST['email']
+        message = request.POST['message']
+        send_mail(
+            fname,
+            message,
+            'settings.EMAIL_HOST_USER',
+            [email],
+            fail_silently=False
+        )
     return render (request, 'Contact.html',)
 
 def CartPage(request):
@@ -58,7 +48,19 @@ def FAQsPage(request):
     return render (request, 'FAQs.html')
 
 def FeedbackPage(request):
+    if request.method=='POST':
+        name=request.POST.get('name')
+        email=request.POST.get('email')
+        feedback=request.POST.get('feedback')  
+        obj=FeedBack(name=name,email=email,feedback=feedback)
+        obj.save()
+        return redirect('comments')
     return render (request, 'feedback.html')
+
+def CommentsPage(request):
+        feedbacks = FeedBack.objects.all()
+        context = {'feedbacks':feedbacks}
+        return render (request, 'comments.html' , context)
 
 def RegisterPage(request):
     if request.method=='POST':

@@ -30,5 +30,8 @@ def FAQs(request):
 def feedback(request):
     return render(request,'feedback.html')
 
+def comments(request):
+    return render(request,'commemnts.html')
+
 def contact(request):
     return render(request,'Contact.html')

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     {% load static%}
-    <link rel="stylesheet" href="{% static 'css/guest200.css' %}">
+    <script src= "{% static 'js/View.js' %}"></script> 
+    <link rel="stylesheet" href="{% static 'css/guest300.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Green Gate Website</title>
     
@@ -13,8 +14,8 @@
   <body>
 
     <div class="menu_bar">
-        <h1 class="logo">Green<span>Gate</span><h2 class="logo2"><img src="{% static 'images/shopping-cart.png' %}"></h2></h1>
-    <ul>
+      <h1 class="logo">Green<span>Gate</span><h2 class="logo2"><img src="{% static 'images/shopping-cart.png' %}"></h2></h1>
+  <ul>
     <li class="active"><a href={% url 'home'%} "index.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Green Gate</a></li>
     <li><a href={% url 'about'%} "About.html"><i class="fa fa-building" aria-hidden="true"></i> About Green Gate</a></li>
     <li>
@@ -50,38 +51,82 @@
     <br><br><br>
   <div class="row">
     <div class="col-lg-4">
-    <img class="thumbnail" src="{% static 'placeholder.jpg' %}">
+    <img width="60%" height="60%" class="thumbnail" src="{% static 'images/Product-1.jpeg' %}">
     <div class="box-element products">
       <br>
       <h2><strong>Our Product Available</strong></h2>
       <hr>
       <a class="btn btn-outline-success" href="#">View</a>
-      <h4 style="display: line-block; float: right"><strong>$20</strong></h4>
+      <h4 style="display: line-block; float: right"><strong>R35</strong></h4>
 
     </div> 
   </div>
   
   <div class="col-lg-4">
-    <img class="thumbnail" src="{% static 'placeholder.jpg' %}">
+    <img width="60%" height="60%" class="thumbnail" src="{% static 'images/Product-2.jpg' %}">
     <div class="box-element product">
       <br>
-      <h2><strong>Our Product Available</strong></h2>
+      <h2><strong>Naked Bar</strong></h2>
       <hr>
       <a class="btn btn-outline-success" href="#">View</a>
-      <h4 style="display: line-block; float: right"><strong>$20</strong></h4>
+      <h4 style="display: line-block; float: right"><strong>R18</strong></h4>
     </div>
   </div>
+  
+<div class="col-lg-4">
+  <img width="60%" height="60%" class="thumbnail" src="{% static 'images/Product-4.jpg' %}">
+<div class="box-element products">
+  <br>
+  <h2><strong>Happilo Almonds x4</strong></h2>
+  <hr>
+  <a class="btn btn-outline-success" href="#">View</a>
+  <h4 style="display: line-block; float: right"><strong>R250</strong></h4>
+</div> 
+</div>
+
+<div class="col-lg-4">
+  <img width="60%" height="60%" class="thumbnail" src="{% static 'images/Product-5.jpg' %}">
+<div class="box-element products">
+  <br>
+  <h2><strong>Blooming Butter</strong></h2>
+  <hr>
+  <a class="btn btn-outline-success" href="#">View</a>
+  <h4 style="display: line-block; float: right"><strong>R60</strong></h4>
+</div> 
+</div>
+
+<div class="col-lg-4">
+  <img width="60%" height="60%" class="thumbnail" src="{% static 'images/Product-6.png' %}">
+<div class="box-element products">
+  <br>
+  <h2><strong>Siggi's Yogurt x4</strong></h2>
+  <hr>
+  <a class="btn btn-outline-success" href="#">View</a>
+  <h4 style="display: line-block; float: right"><strong>R45</strong></h4>
+</div> 
+</div>
+
+<div class="col-lg-4">
+  <img width="60%" height="60%" class="thumbnail" src="{% static 'images/Product-8.jpg' %}">
+<div class="box-element products">
+  <br>
+  <h2><strong>Goodness Bowl Cereal</strong></h2>
+  <hr>
+  <a class="btn btn-outline-success" href="#">View</a>
+  <h4 style="display: line-block; float: right"><strong>R40</strong></h4>
+</div> 
+</div>
 
 
-  <div class="col-lg-4">
-    <div class="box-element product">
-      <img class="thumbnail" src="{% static 'placeholder.jpg' %}">
-      <br><br>
-      <h2><strong>Our Product Available</strong></h2>
-      <hr>
-      <a class="btn btn-outline-success" href="#">View</a>
-      <h4 style="display: line-block; float: right"><strong>$20</strong></h4>
-    </div>
+<div class="col-lg-4">
+  <img width="60%" height="60%" class="thumbnail" src="{% static 'images/Product-10.png' %}">
+<div class="box-element products">
+  <br>
+  <h2><strong>Beetroot Chips</strong></h2>
+  <hr>
+  <a class="btn btn-outline-success" href="#">View</a>
+  <h4 style="display: line-block; float: right"><strong>R45</strong></h4>
+</div> 
 </div>
 
 <div class="content2">
@@ -89,42 +134,96 @@
   <br><br><br>
 <div class="row">
   <div class="col-lg-4">
-  <img class="thumbnail" src="{% static 'placeholder.jpg' %}">
+    <img width="60%" height="60%" class="thumbnail" src="{% static 'images/Product-7.jpg' %}">
   <div class="box-element products">
     <br>
-    <h2><strong>Our Product Available</strong></h2>
+    <h2><strong>Orbs Milk</strong></h2>
     <hr>
     <a class="btn btn-outline-success" href="#">View</a>
-    <h4 style="display: line-block; float: right"><strong>$20</strong></h4>
-
+    <h4 style="display: line-block; float: right"><strong>R28</strong></h4>
   </div> 
 </div>
 
 <div class="col-lg-4">
-  <img class="thumbnail" src="{% static 'placeholder.jpg' %}">
-  <div class="box-element product">
-    <br>
-    <h2><strong>Our Product Available</strong></h2>
-    <hr>
-    <a class="btn btn-outline-success" href="#">View</a>
-    <h4 style="display: line-block; float: right"><strong>$20</strong></h4>
-  </div>
+  <img width="60%" height="60%" class="thumbnail" src="{% static 'images/Product-9.jpg' %}">
+<div class="box-element products">
+  <br>
+  <h2><strong>Welch's Juice x2</strong></h2>
+  <hr>
+  <a class="btn btn-outline-success" href="#">View</a>
+  <h4 style="display: line-block; float: right"><strong>R25</strong></h4>
+</div> 
+</div>
+
+<div class="col-lg-4">
+  <img width="60%" height="60%" class="thumbnail" src="{% static 'images/Product-11.jpg' %}">
+<div class="box-element products">
+  <br>
+  <h2><strong>Yogurt x12</strong></h2>
+  <hr>
+  <a class="btn btn-outline-success" href="#">View</a>
+  <h4 style="display: line-block; float: right"><strong>R80</strong></h4>
+</div> 
 </div>
 
 
 <div class="col-lg-4">
-  <div class="box-element product">
-    <img class="thumbnail" src="{% static 'placeholder.jpg' %}">
-    <br><br>
-    <h2><strong>Our Product Available</strong></h2>
-    <hr>
-    <a class="btn btn-outline-success" href="#">View</a>
-    <h4 style="display: line-block; float: right"><strong>$20</strong></h4>
+  <img width="60%" height="60%" class="thumbnail" src="{% static 'images/Product-12.jpg' %}">
+<div class="box-element products">
+  <br>
+  <h2><strong>Harmless Harvest Coconut Water</strong></h2>
+  <hr>
+  <a class="btn btn-outline-success" href="#">View</a>
+  <h4 style="display: line-block; float: right"><strong>R70</strong></h4>
+</div> 
 </div>
+
+
+<div class="col-lg-4">
+  <img width="60%" height="60%" class="thumbnail" src="{% static 'images/Product-13.png' %}">
+<div class="box-element products">
+  <br>
+  <h2><strong>Energy Drink</strong></h2>
+  <hr>
+  <a class="btn btn-outline-success" href="#">View</a>
+  <h4 style="display: line-block; float: right"><strong>R35</strong></h4>
+</div> 
 </div>
 
 
+<div class="col-lg-4">
+  <img width="60%" height="60%" class="thumbnail" src="{% static 'images/Product-14.jpg' %}">
+<div class="box-element products">
+  <br>
+  <h2><strong>Suja x4</strong></h2>
+  <hr>
+  <a class="btn btn-outline-success" href="#">View</a>
+  <h4 style="display: line-block; float: right"><strong>R85</strong></h4>
+</div> 
+</div>
 
 
+<div class="col-lg-4">
+  <img width="60%" height="60%" class="thumbnail" src="{% static 'images/Product-15.jpg' %}">
+<div class="box-element products">
+  <br>
+  <h2><strong>Tea Riot Energy Drink x</strong></h2>
+  <hr>
+  <a class="btn btn-outline-success" href="#">View</a>
+  <h4 style="display: line-block; float: right"><strong>R75</strong></h4>
+</div> 
+</div>
 
+<div class="col-lg-4">
+  <img width="60%" height="60%" class="thumbnail" src="{% static 'images/Product-17.png' %}">
+<div class="box-element products">
+  <br>
+  <h2><strong>Bodi Juice x3</strong></h2>
+  <hr>
+  <a class="btn btn-outline-success" href="#">View</a>
+  <h4 style="display: line-block; float: right"><strong>R90</strong></h4>
+</div> 
+</div>
+
+</body>
 </html>

@@ -90,7 +90,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    height:500px;
+    height:auto;
     max-width: 500px;
     background-color: var(--color4);
     padding: 80px;
@@ -119,6 +119,8 @@ body{
     outline: 0;
     border: 2px solid var(--color1);
     border-radius: 5px;
+    font-size: 20px;
+    font-weight: 800;
   }
   
   .form label .input + span {
@@ -151,7 +153,9 @@ body{
     width: 100%;
     padding: 10px 10px 20px 10px;
     outline: 0;
-    border: 2px solid var(--color1)
+    border: 2px solid var(--color1);
+    font-size: 25px;
+    font-weight: 800;
   }
   
   .form label .input01 + span {
@@ -165,7 +169,7 @@ body{
   }
   
   .form label .input01:placeholder-shown + span {
-    top: 40px;
+    top: 70px;
     font-size:20px;
     font-weight: 800;
   }
@@ -288,3 +292,45 @@ body{
     right: 0;
     width: 0;
   }
+ul.messages {
+    margin:10px 100px;
+    padding:0;
+    list-style-type:
+    none;
+}
+ul.messages li.success,
+ul.messages li.warning,
+ul.messages li.error,
+ul.messages li.info {
+    margin-left:350px;
+    padding:14px 20px;
+    list-style:none;
+    color:var(--a--hover-color);
+    border-radius: 15px;
+    width: 650px;
+    height:70px;
+    font-size: 25px;
+}
+
+ul.messages li.success { background:#00C851; color: var(--global-text-color); }
+ul.messages li.success a { color:#007E33; }
+
+ul.messages li.error { background:#ff4444; color:var(--global-text-color) }
+ul.messages li.error a { color:#CC0000; }
+
+ul.messages li.info { background:#2BBBAD; color:var(--global-text-color); }
+ul.messages li.info a { color:#0d47a1; }
+
+ul.messages li.warning { background:#FF8800; color: var(--global-text-color); }
+ul.messages li.warning a { color:#ffbb33; }
+
+ul.messages li a.close {
+    margin-top:-15px;
+    margin-left: 8px;
+    float:right;
+    opacity:2;
+    border:0;
+    box-shadow:none;
+    text-shadow:var(--a--hover-color);
+    color: var(--global-text-color);
+}
