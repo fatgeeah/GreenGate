@@ -84,7 +84,7 @@ body{
     padding: 10px;
 }
 .center h2{
-    margin-top: 10px;
+    margin-top: 60px;
     margin-left: 550px;
     font-size: 40px;
     font-weight: 800;
@@ -99,7 +99,7 @@ body{
 .one-div {
     cursor: help;
     position: relative;
-    width: 185px;
+    width: 300px;
     height: 30px;
     margin-top: 100px;
     margin-left: 500px;
@@ -109,11 +109,11 @@ body{
       #6248FF 3%,
       #00DDEB 95%
       );
-    animation: spin 4s linear infinite;
+    animation: spin 8s linear infinite;
     transform: translateY(100px);
     box-shadow: 0px 10px 25px -10px #4E67FB;
     transform-style: preserve-3d;
-    transition: all 0.4s;
+    transition: all 8s;
   }
   
   .one-div::before {
@@ -131,7 +131,7 @@ body{
     -webkit-background-clip: text;
     color: transparent;
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     left: -10px;
   }
   
