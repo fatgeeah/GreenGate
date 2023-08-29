@@ -28,6 +28,7 @@ urlpatterns = [
     path('Register/', views.RegisterPage, name='register'),
     path('logout/', views.LogoutPage, name='logout'),
     path('about/', views.AboutPage, name='about'),
+    path('about2/', views.AboutPage2, name='about2'),
     path('guest/', views.GuestPage, name='guest'), 
     path('contact/', views.ContactPage, name='contact'),
     path('FAQs/', views.FAQsPage, name='FAQs'),

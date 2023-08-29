@@ -18,6 +18,9 @@ def checkout(request):
 def about(request):
     return render(request,'About.html')
 
+def about2(request):
+    return render(request,'About2.html')
+
 def guest(request):
     return render(request,'Guest.html')
 

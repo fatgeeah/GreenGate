@@ -6,7 +6,7 @@
         <title>Green Gate Website</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         {% load static%}
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/store.css' %}">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     </head>
@@ -14,33 +14,30 @@
     <div class="menu_bar">
         <h1 class="logo">Green<span>Gate</span><h2 class="logo2"><img src="{% static 'images/shopping-cart.png' %}"></h2></h1>
     <ul>
-    <li class="active"><a href={% url 'home'%} "index.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Green Gate</a></li>
-    <li><a href={% url 'about'%} "About.html"><i class="fa fa-building" aria-hidden="true"></i> About Green Gate</a></li>
-    <li>
-        <a href="#">Green Gate's Help <i class="fas fa-caret-down"></i></a>
-
-        <div class="dropdown_menu">
-            <ul>
-                <li><a href={% url 'contact'%} "Contact.html">Contact Green Gate</a></li>
-                <li><a href={% url 'FAQs'%} "FAQs.html">Green Gate's FAQs</a></li>
-                <li><a href={% url 'feedback'%} "feedback.html">Feedback</a></li>
-            </ul>
-        </div>
-    </li>
+    <li class="active"><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i> Green Gate</a></li>
+    <li><a href={% url 'about2'%} "About2.html"><i class="fa fa-building" aria-hidden="true"></i> About Green Gate</a></li>
+    <li><a href="#">Green Gate's Help</a></li>
     <li>
         <a href="#"><i class="fa fa-users" aria-hidden="true"></i> Account Actions <i class="fas fa-caret-down"></i></a>
         
         <div class="dropdown_menu">
             <ul>
-                <li><a href ={% url 'guest'%} "Guest.html">Guest Mode</a></li>
-                <li><a href={% url 'login'%} "login.html">Login</a></li>
-                <li><a href={% url 'register'%} "register.html">Regitser</a></li>
+                <li><a href ={% url 'home'%} "index.html">Logout</a></li>
             </ul>
         </div>
     </li>
     </ul>
     </div>
 
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li class="{{ message.tags }}">
+                {{ message|safe }}
+                <a onclick="window.location.reload()"; href="#" class="close">X</a>
+        {% endfor %}
+    </ul>
+{% endif %} 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
 </body>
 <br><br><br>
@@ -53,7 +50,7 @@
   <div class="row">
     {% for product in products %}
     <div class="col-lg-4">
-    <img class="thumbnail" src="{% static 'placeholder.jpg' %}">
+    <img width="60%" height="60%" class="thumbnail" src="{% static 'placeholder.jpg' %}">
     <div class="box-element products">
       <br>
       <h2><strong>{{product.name}}</strong></h2>
@@ -61,8 +58,9 @@
            
       <button class="btn btn-outline-dark add-btn">Add to Cart</button>
       <a class="btn btn-outline-success" href="#">View</a>
-      <h4 style="display: line-block; float: right"><strong>${{product.price|floatformat:2}}</strong></h4>
+      <h4 style="display: line-block; float: right"><strong>R{{product.price|floatformat:2}}</strong></h4>
 
+      <br><br><br><br>
     </div> 
   </div>
   {% endfor %}

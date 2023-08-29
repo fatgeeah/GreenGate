@@ -6,34 +6,20 @@
         <title>Green Gate Website</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         {% load static%}
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/cart200.css' %}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     </head>
     <body>
     <div class="menu_bar">
         <h1 class="logo">Green<span>Gate</span><h2 class="logo2"><img src="{% static 'images/shopping-cart.png' %}"></h2></h1>
     <ul>
-    <li class="active"><a href={% url 'home'%} "index.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Green Gate</a></li>
-    <li><a href={% url 'about'%} "About.html"><i class="fa fa-building" aria-hidden="true"></i> About Green Gate</a></li>
-    <li>
-        <a href="#">Green Gate's Help <i class="fas fa-caret-down"></i></a>
-
+    <li class="active"><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i> Green Gate</a></li>
+    <li><a href={% url 'about2'%} "About2.html"><i class="fa fa-building" aria-hidden="true"></i> About Green Gate</a></li>
+    <li><a href="#">Green Gate's Help </a></li>
+    <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i> Account Actions <i class="fas fa-caret-down"></i></a>
         <div class="dropdown_menu">
             <ul>
-                <li><a href={% url 'contact'%} "Contact.html">Contact Green Gate</a></li>
-                <li><a href={% url 'FAQs'%} "FAQs.html">Green Gate's FAQs</a></li>
-                <li><a href={% url 'feedback'%} "feedback.html">Feedback</a></li>
-            </ul>
-        </div>
-    </li>
-    <li>
-        <a href="#"><i class="fa fa-users" aria-hidden="true"></i> Account Actions <i class="fas fa-caret-down"></i></a>
-        
-        <div class="dropdown_menu">
-            <ul>
-                <li><a href ={% url 'guest'%} "Guest.html">Guest Mode</a></li>
-                <li><a href={% url 'login'%} "login.html">Login</a></li>
-                <li><a href={% url 'register'%} "register.html">Regitser</a></li>
+                <li><a href={% url 'home'%} "index.html">Logout</a></li>
             </ul>
         </div>
     </li>
@@ -72,15 +58,15 @@
 
             
         <div class="cart-row">
-            <div style="flex:2"><img class="row-image"src="{% static 'placeholder.jpg' %}"></div> 
+            <div style="flex:2"><img class="row-image"src="{% static 'images/placeholder.jpg' %}"></div> 
             <div style="flex:2"><p>Product 1</p></div>
             <div style="flex:1"><p>$20</p></div>
             <div style="flex:1">
                 <p class="quantity">x2</p>
                 <div class="quantity">
-                    <img class="chg-quantity update-cart" src="{% static  'arrow-up.png' %}">
+                    <img class="chg-quantity update-cart" src="{% static  'images/arrow-up.png' %}">
             
-                    <img class="chg-quantity update-cart" src="{% static  'arrow-down.png' %}">
+                    <img class="chg-quantity update-cart" src="{% static  'images/arrow-down.png' %}">
                 </div>
         </div>
         <div style="flex:1"><p>$40</p></div>

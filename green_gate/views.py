@@ -14,6 +14,9 @@ def HomePage(request):
 def AboutPage(request):
     return render (request, 'About.html')
 
+def AboutPage2(request):
+    return render (request, 'About2.html')
+
 def GuestPage(request):
     return render (request, 'Guest.html')
 
@@ -76,6 +79,10 @@ def RegisterPage(request):
      else:
         my_user=User.objects.create_user(uname,email,pass1)
         my_user.save()
+        if my_user is not None:
+                    login(request, my_user)
+                    msg = f"{uname} Thank You for Registering , You can now Login"
+                    messages.success(request, msg) 
         return redirect('login')
      print(uname,email,pass1) 
      
@@ -88,10 +95,11 @@ def LoginPage(request):
         user=authenticate(request, username=username, password=pass1)
         if user is not None:
             login(request,user)
+            msg = f"{username} you are login"
+            messages.success(request, msg) 
             return redirect('store')
-        else:
-            return HttpResponse("Username or Passsword is incorrect")
-    return render (request, 'Login.html')
+    else:
+     return render (request, 'Login.html')
 
 # @login_required(login_url='login')
 def StorePage(request):
