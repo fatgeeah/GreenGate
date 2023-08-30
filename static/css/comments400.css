@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
 :root{
     --color1 :  rgb(11, 126, 69);
     --color2 :#FFF ;
     --color3 :#FF66D8 ;
     --color4 :#000000;
-    --color5 :rgb(4, 44, 4);
 
 }
 *{
@@ -13,12 +14,6 @@
 }
 body{
     font-family: sans-serif;
-}
-section{
-    display: grid;
-    height: 100%;
-    place-items: center;
-    text-align: center;
 }
 .menu_bar{
     height: 80px;
@@ -36,7 +31,7 @@ section{
 }
 .logo2{
     margin-top: 10px;
-    margin-left: -220px;
+    margin-left: -215px;
 }
 .logo span{
     color: var(--color4);
@@ -66,6 +61,7 @@ section{
     display: none;
 }
 .dropdown_menu ul li a {
+    font-family: 'Phudu', cursive;
     color: var(--color4);
     font-size: 20px;
     font-weight: 600;
@@ -111,6 +107,7 @@ ul{
     font-size: 30px;
     display: block;
     color: var(--color2);  
+    font-family: 'Phudu', cursive;
 }
 h4{
     margin-left:120px ;
@@ -118,10 +115,12 @@ h4{
     font-size: 40px;
     font-weight: 600;
     color: var(--color1);
+    font-family: 'Phudu', cursive;
 }
 .first-label{
     font-weight: 600;
     font-size: 25px;
+    font-family: 'Phudu', cursive;
 }
 h2{
     margin-top: -35px;
@@ -129,10 +128,12 @@ h2{
     font-weight: 700;
     margin-left: 490px;
     color: var(--color2);
+    
 }
 .second-label{
     font-weight: 600;
     font-size: 25px;
+    font-family: 'Phudu', cursive;
 }
 h3{
     margin-top: -30px;
@@ -148,8 +149,9 @@ button{
     border-radius: 11px;
     border: 0;
     padding: 15px 18px;
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Phudu', cursive;
 }
 
 button:hover{
@@ -157,26 +159,37 @@ button:hover{
     color: var(--color1);
     text-transform: uppercase;
     text-decoration: underline;
+    font-family: 'Phudu', cursive;
+    font-size: 30px;
+    font-weight: 800;
 }
 
 button.not-disabled{
     color: var(--color4);
     background-color: var(--color2);
     cursor: pointer;
+    font-family: 'Phudu', cursive;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 button.not-disabled:hover{
     background-color: var(--color2);
     transition: all 0.5s 0.1s;
+    font-family: 'Phudu', cursive;
+    font-size: 30px;
+    font-weight: 800;
 }
 ::placeholder{
     color: black;
     font-size: 20px;
     font-weight: 800;
+    font-family: 'Phudu', cursive;
 } 
 .feedback input[type="text"]{
     margin-top: 10px;
     height: 50px;
     font-size: 20px;
-    font-weight: 800;
+    font-weight:900;
+    font-family: 'Phudu', cursive;
 }

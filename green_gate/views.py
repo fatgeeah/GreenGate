@@ -95,7 +95,7 @@ def LoginPage(request):
         user=authenticate(request, username=username, password=pass1)
         if user is not None:
             login(request,user)
-            msg = f"{username} you are login"
+            msg = f"{username} you are  logged in"
             messages.success(request, msg) 
             return redirect('store')
     else:

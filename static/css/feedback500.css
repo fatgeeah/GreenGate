@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
 :root{
     --color1 :  rgb(11, 126, 69);
     --color2 :#FFF ;
     --color3 :#FF66D8 ;
     --color4 :#000000;
-    --color5 :rgb(4, 44, 4);
 
 }
 *{
@@ -13,13 +14,6 @@
 }
 body{
     font-family: sans-serif;
-    overflow: hidden;
-}
-section{
-    display: grid;
-    height: 100%;
-    place-items: center;
-    text-align: center;
 }
 .menu_bar{
     height: 80px;
@@ -37,7 +31,7 @@ section{
 }
 .logo2{
     margin-top: 10px;
-    margin-left: -220px;
+    margin-left: -215px;
 }
 .logo span{
     color: var(--color4);
@@ -67,6 +61,7 @@ section{
     display: none;
 }
 .dropdown_menu ul li a {
+    font-family: 'Phudu', cursive;
     color: var(--color4);
     font-size: 20px;
     font-weight: 600;
@@ -98,22 +93,24 @@ ul{
 }
 .rating-wrapper{
     max-width: 55%;
-    margin-left: 100px;
+    margin-left: 150px;
     margin-top: 60px;
     background-image: linear-gradient(to right , rgb(11, 126, 69) ,rgb(7, 93, 50));
     padding: 50px;
     border-radius: 5px;
     box-shadow: 8px 10px 5px var(--color4);
     height: 650px;
+    font-family: 'Phudu', cursive;
 }
 .rating-wrapper .rating-label{
     text-align: center;
     font-weight: 800;
     display: block;
+    font-family: 'Phudu', cursive;
+    
 }
 .rating-wrapper .ratingItemList{
     max-width: 300px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     padding: 5px 0px;
@@ -127,6 +124,7 @@ ul{
     opacity: 0.10;
     filter:drop-shadow(1);
     cursor: pointer;
+    
 }
 .rating-wrapper label.rating:hover{
     filter: grayscale(0.84);
@@ -139,33 +137,38 @@ ul{
     transform: scale(1.1);
 }
 .feedback textarea, .feedback input{
-    width: 60%;
+    width: 70%;
     margin-top: 20px;
+    font-family: 'Phudu', cursive;
 }
 .feedback textarea .feedback input{
     max-width: 400px;
-    width: 60%;
+    width: 70%;
     display: block;
     margin: 0.5 auto;
     padding: 0.5em;
     border: 1px solid var(--color4);
     border-radius: 5px;
+    font-family: 'Phudu', cursive;
 }
 .feedback input[type="text"]{
     height: 50px;
     font-size: 20px;
     font-weight: 600;
+    font-family: 'Phudu', cursive;
 }
 .feedback textarea{
     margin-top: 20px;
     height: 120px;
     font-size: 20px;
     font-weight: 800;
+    font-family: 'Phudu', cursive;
 }
 .rating-label{
     color: var(--color2);
     font-size: 40px;
     margin-right: 50px;    
+    font-family: 'Phudu', cursive;
 }
 button{
     margin-top: 30px;
@@ -176,6 +179,7 @@ button{
     padding: 15px 18px;
     font-size: 20px;
     font-weight: 800;
+    font-family: 'Phudu', cursive;
 }
 
 button:hover{
@@ -183,6 +187,7 @@ button:hover{
     color: var(--color1);
     text-transform: uppercase;
     text-decoration: underline;
+    font-family: 'Phudu', cursive;
 }
 
 button.not-disabled{

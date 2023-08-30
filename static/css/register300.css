@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
 :root{
     --color1 :  rgb(11, 126, 69);
     --color2 :#FFF ;
@@ -13,13 +15,6 @@
 }
 body{
     font-family: sans-serif;
-    overflow: hidden;
-}
-section{
-    display: grid;
-    height: 100%;
-    place-items: center;
-    text-align: center;
 }
 .menu_bar{
     height: 80px;
@@ -34,10 +29,11 @@ section{
     margin-top: 25px;
     color: var(--color2);
     font-size: 30px;
+    font-weight:700 ;
 }
 .logo2{
     margin-top: 10px;
-    margin-left: -220px;
+    margin-left: -230px;
 }
 .logo span{
     color: var(--color4);
@@ -67,6 +63,7 @@ section{
     display: none;
 }
 .dropdown_menu ul li a {
+    font-family: 'Phudu', cursive;
     color: var(--color4);
     font-size: 20px;
     font-weight: 600;
@@ -79,7 +76,7 @@ section{
     display: block;
     position: absolute;
     left: 0;
-    margin-left: 50px ;
+    margin-left: 60px ;
     top: 100%;
     width: 230px;
 }
@@ -94,12 +91,12 @@ section{
 
 .form {
     margin-top: 50px;
-    margin-left: 550px;
+    margin-left: 420px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 500px;
-    height: 680px;
+    max-width: 620px;
+    height: auto;
     background-color: var(--color1);
     padding: 20px;
     border-radius: 20px;
@@ -107,14 +104,15 @@ section{
   }
   
   .title {
-    font-size: 40px;
-    font-family: 'Edu SA Beginner', cursive;
-    color: var(--color5);
+    font-size: 45px;
+    font-family: 'Phudu', cursive;
+    color: var(--color2);
     font-weight: 600;
     letter-spacing: -1px;
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-left: 30px;
   }
   
@@ -126,22 +124,32 @@ section{
     border-radius: 50%;
     left: 0px;
     background-color:var(--color5);
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Phudu', cursive;
   }
   
   .title::before {
-    width: 18px;
-    height: 18px;
+    margin-left: 35px;
+    width: 25px;
+    height: 25px;
     background-color: var(--color5);
   }
   
   .title::after {
-    width: 18px;
-    height: 18px;
-    animation: pulse 1s linear infinite;
+    margin-left: 30px;
+    width: 35px;
+    height: 30px;
+    animation: pulse 2s linear infinite;
   }
+
+.message{
+    margin-top: 20px;
+    font-weight: 600;
+    margin-left: 30px;
+    color: white;
+    font-size: 24px;
+  }  
   
-  .message, .signin {
+.signin {
     margin-top: 20px;
     color: white;
     font-size: 22px;
@@ -160,13 +168,17 @@ section{
   }
 
   .form label {
+    font-family: 'Phudu', cursive;
     position: relative;
+    font-size: 20px;
+    font-weight: 800;
   }
   
   .form label .input {
+    font-family: 'Phudu', cursive;
     font-weight: 900;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 80px;
     width: 70%;
     padding: 10px 10px 20px 10px;
@@ -176,10 +188,11 @@ section{
   }
   
   .form label .input + span {
+    font-family: 'Phudu', cursive;
     margin-left: 80px;
     position: absolute;
     left: 10px;
-    top: 30px;
+    top: 35px;
     color: var(--color4);
     font-weight:900;
     cursor: text;
@@ -188,12 +201,12 @@ section{
   
   .form label .input:placeholder-shown + span {
     top: 15px;
-    font-size:20px;
+    font-size:0px;
   }
   
   .form label .input:focus + span,.form label .input:valid + span {
-    top: 15px;
-    font-size: 20px;
+    top: -5px;
+    font-size: 0px;
     font-weight: 600;
   }
   
@@ -201,13 +214,11 @@ section{
     color: var(--color5);
     font-size: 0px;
   }
-
   ::placeholder { 
     color: black;
-    font-size: 17px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 900;
   }
-
   .submit {
     width: 200px;
     border: none;
@@ -218,9 +229,10 @@ section{
     color: #fff;
     font-size: 20px;
     font-weight: 800;
-    margin-top: 20px;
-    margin-left: 150px;
+    margin-top: 10px;
+    margin-left: 200px;
     transform: .3s ease;
+    font-family: 'Phudu', cursive;
   }
   
   .submit:hover {
@@ -228,6 +240,7 @@ section{
     color: var(--color4);
     text-transform: uppercase;
     text-decoration: underline;
+    font-family: 'Phudu', cursive;
   }
   
   @keyframes pulse {

@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
 :root{
     --color1 :  rgb(11, 126, 69);
     --color2 :#FFF ;
     --color3 :#FF66D8 ;
     --color4 :#000000;
-    --color5 :rgb(4, 44, 4);
 
 }
 *{
@@ -11,14 +12,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: sans-serif;
-    background:rgba(255, 255, 255, 0.757);
-    margin: 0;
-    padding: 0;
-    height:190vh ;
-    width:100%;
 }
 .menu_bar{
     height: 80px;
@@ -31,15 +26,15 @@ body{
 }
 .logo{
     margin-top: 25px;
-    color: var(--color2);
+    color: var(--color4);
     font-size: 30px;
 }
 .logo2{
     margin-top: 10px;
-    margin-left: -210px;
+    margin-right: 1160px;
 }
 .logo span{
-    color: var(--color4);
+    color: var(--color2);
 }
 .menu_bar ul{
     display: flex;
@@ -66,6 +61,7 @@ body{
     display: none;
 }
 .dropdown_menu ul li a {
+    font-family: 'Phudu', cursive;
     color: var(--color4);
     font-size: 20px;
     font-weight: 600;
@@ -90,14 +86,17 @@ body{
     width: 200px;
     padding: 10px;
 }
- .hero{
+.hero{
 	display: flex; 
 	align-items: center;
 	justify-content: center;
 }  
 .header h1{
+    font-family: 'Rubik Iso', cursive;
     color: var(--color5);
     font-size: 50px;
+    font-weight: 800;
+    margin-top: 20px;
     }
 .hero{
     color: var(--color4);
@@ -117,14 +116,15 @@ body{
     text-align: center;
     }   
 .content h2{
+    font-family: 'Phudu', cursive;
     margin-top: -8px;
-    font-size: 60px;
-    color: var(--color5);
+    font-size: 50px;
+    color: var(--color1);
     font-weight: 40;
     transition: 0.3s;
+    font-weight: 800;
     }
 .content p{
-    font-family: 'Shadows Into Light', cursive;
     text-decoration: none;
     display: inline-block;
     color:var(--color4);
@@ -134,11 +134,11 @@ body{
     margin-top: 20px ;
 }
 .logo3{
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Phudu', cursive;
     text-transform: uppercase;
-    margin-top: 150px;
-    margin-left:150px ;
-    color: var(--color4);
+    margin-top: 50px;
+    margin-left:350px ;
+    color: var(--color1);
     font-size: 50px;
     font-weight: 900;
     letter-spacing: 1px;
@@ -187,9 +187,12 @@ body{
       }
   }
 span{
-    color: var(--color5);    
+    color: var(--color4);    
 }   
 .content li {
     font-size: 40px;
     color: var(--color4);
+    list-style: none;
 }  
+
+

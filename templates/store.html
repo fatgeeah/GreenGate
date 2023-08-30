@@ -6,7 +6,7 @@
         <title>Green Gate Website</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         {% load static%}
-        <link rel="stylesheet" href="{% static 'css/store.css' %}">
+        <link rel="stylesheet" href="{% static 'css/store400.css' %}">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     </head>
@@ -42,10 +42,10 @@
 </body>
 <br><br><br>
 <div class="headers">
-  <center><h1>Green Gate's Products Available for Purchase</h1></center>
+  <center><h3>Green Gate's Products Available for Purchase</h3></center>
  
   <div class="content1">
-    <center><h3>Green Gate's Products</h3></center>
+    <center><h5>Green Gate's Products</h5></center>
     <br><br><br>
   <div class="row">
     {% for product in products %}
@@ -66,83 +66,5 @@
   {% endfor %}
 </div>
 
-
-
-
-  {% comment %} <div class="col-lg-4">
-    <img class="thumbnail" src="{% static 'placeholder.jpg' %}">
-    <div class="box-element product">
-      <br>
-      <h2><strong>Our Product Available</strong></h2>
-      <hr>
-  
-      <button class="btn btn-outline-dark add-btn">Add to Cart</button>
-      <a class="btn btn-outline-success" href="#">View</a>
-      <h4 style="display: line-block; float: right"><strong>$20</strong></h4>
-    </div>
-  </div>
-
-
-  <div class="col-lg-4">
-    <div class="box-element product">
-      <img class="thumbnail" src="{% static 'placeholder.jpg' %}">
-      <br><br>
-      <h2><strong>Our Product Available</strong></h2>
-      <hr>
-           
-      <button class="btn btn-outline-dark add-btn">Add to Cart</button>
-      <a class="btn btn-outline-success" href="#">View</a>
-      <h4 style="display: line-block; float: right"><strong>$20</strong></h4>
-    </div>
-</div>
-
-<div class="content2">
-  <center><h3>Green Gate's Beverage Products</h3></center>
-  <br><br><br>
-<div class="row">
-  <div class="col-lg-4">
-  <img class="thumbnail" src="{% static 'placeholder.jpg' %}">
-  <div class="box-element products">
-    <br>
-    <h2><strong>Our Product Available</strong></h2>
-    <hr>
-         
-    <button class="btn btn-outline-dark add-btn">Add to Cart</button>
-    <a class="btn btn-outline-success" href="#">View</a>
-    <h4 style="display: line-block; float: right"><strong>$20</strong></h4>
-
-  </div> 
-</div>
-
-<div class="col-lg-4">
-  <img class="thumbnail" src="{% static 'placeholder.jpg' %}">
-  <div class="box-element product">
-    <br>
-    <h2><strong>Our Product Available</strong></h2>
-    <hr>
-
-    <button class="btn btn-outline-dark add-btn">Add to Cart</button>
-    <a class="btn btn-outline-success" href="#">View</a>
-    <h4 style="display: line-block; float: right"><strong>$20</strong></h4>
-  </div>
-</div>
-
-
-<div class="col-lg-4">
-  <div class="box-element product">
-    <img class="thumbnail" src="{% static 'placeholder.jpg' %}">
-    <br><br>
-    <h2><strong>Our Product Available</strong></h2>
-    <hr>
-         
-    <button class="btn btn-outline-dark add-btn">Add to Cart</button>
-    <a class="btn btn-outline-success" href="#">View</a>
-    <h4 style="display: line-block; float: right"><strong>$20</strong></h4>
-</div>
-</div> {% endcomment %}
-
-
-
-
-
+</body>
 </html>

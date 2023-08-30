@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+:root{
+    --color1 :  rgb(11, 126, 69);
+    --color2 :#FFF ;
+    --color3 :#FF66D8 ;
+    --color4 :#000000;
+    --color5 :rgb(4, 44, 4);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.menu_bar{
+    height: 80px;
+    background: var(--color1);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.logo{
+    margin-top: 25px;
+    color: var(--color2);
+    font-size: 30px;
+    font-weight:700 ;
+}
+.logo2{
+    margin-top: 10px;
+    margin-left: -230px;
+}
+.logo span{
+    color: var(--color4);
+}
+.menu_bar ul{
+    display: flex;
+    list-style: none;
+}
+.menu_bar ul li{
+    margin-top: 20px;
+    padding: 10px 30px;
+    position: relative;
+}
+.menu_bar ul li a{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color2);
+    transition: all 0.3s;
+}
+.menu_bar ul li a:hover{
+    color: var(--color4);
+    font-size: 25px;
+    font-weight: 600;
+}
+.dropdown_menu{
+    display: none;
+}
+.dropdown_menu ul li a {
+    font-family: 'Phudu', cursive;
+    color: var(--color4);
+    font-size: 20px;
+    font-weight: 600;
+}
+.dropdown_menu ul li a:hover{
+    font-weight: 800;
+    font-size: 25px;
+}
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    margin-left: -10px ;
+    top: 100%;
+    width: 230px;
+}
+.menu_bar ul li:hover .dropdown_menu ul{
+    display: block;
+    margin: 20px;
+}
+.menu_bar ul li:hover .dropdown_menu ul li{
+    width: 200px;
+    padding: 10px;
+}
+
+ul.messages {
+    margin:10px 100px;
+    padding:0;
+    list-style-type:none;
+    color:var(--color2);
+}
+ul.messages li.success,
+ul.messages li.warning,
+ul.messages li.error,
+ul.messages li.info {
+    margin-top: 50px;
+    margin-left:50px;
+    padding:14px 20px;
+    list-style:none;
+    border-radius: 15px;
+    font-weight: 800;
+    width: 700px;
+    height:70px;
+    font-size: 20px;
+}
+
+ul.messages li.success { background:#00C851; color: var(--global-text-color); }
+ul.messages li.success a { color:#007E33; }
+
+ul.messages li.error { background:#ff4444; color:var(--global-text-color) }
+ul.messages li.error a { color:#CC0000; }
+
+ul.messages li.info { background:#2BBBAD; color:var(--global-text-color); }
+ul.messages li.info a { color:#0d47a1; }
+
+ul.messages li.warning { background:#FF8800; color: var(--global-text-color); }
+ul.messages li.warning a { color:#ffbb33; }
+
+ul.messages li a.close {
+    margin-top:-7px;
+    margin-left: 8px;
+    float:right;
+    opacity:2;
+    border:0;
+    box-shadow:none;
+    text-shadow:var(--a--hover-color);
+    color: var(--global-text-color);
+}
+
+.btn{
+	border-radius: 0;
+}
+.form-field{
+	width:250px;
+	display: inline-block;
+	padding: 5px;
+}
+
+.cart-row{
+	display: flex;
+    align-items: flex-stretch;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+
+}
+.box-element h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+.headers h3{
+    font-size: 50px;
+    color: var(--color1);
+    font-weight: 800;
+    font-family: 'Phudu', cursive;
+}
+.content1 h5{
+    font-size: 45px;
+    color: var(--color1);
+    font-weight: 800;   
+    margin-top: 40px;
+    font-family: 'Phudu', cursive;
+}
+h2{
+    font-size: 350px;
+    font-weight: 800;  
+}

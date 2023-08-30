@@ -6,7 +6,7 @@
         <title>Green Gate Website</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         {% load static%}
-        <link rel="stylesheet" href="{% static 'css/feedback400.css' %}">
+        <link rel="stylesheet" href="{% static 'css/feedback500.css' %}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     </head>
     <body>
@@ -22,7 +22,6 @@
             <ul>
                 <li><a href={% url 'contact'%} "Contact.html">Contact Green Gate</a></li>
                 <li><a href={% url 'FAQs'%} "FAQs.html">Green Gate's FAQs</a></li>
-                <li><a href={% url 'feedback'%} "feedback.html">Feedback</a></li>
             </ul>
         </div>
     </li>
@@ -42,6 +41,7 @@
      <form action="" method="post" class="rating-wrapper">
         {% csrf_token %}
         <label class="rating-label">Don't forget to leave some feedback...
+            <br><br>
             <div class="ratingItemsList">
                 <input class="rating rating-1" id="rating-1-2" type="radio" value="1" name="rating">
                 <label class="rating rating-1" for="rating-1-2">😢</label>
@@ -60,10 +60,10 @@
             
             </div>
         </label>
-
+<br>
         <div class="feedback">
-            <input type="text" autocomplete="off" name="name" id="name" placeholder="Your Full Name">
-            <input type="text" autocomplete="off" name="email" id="email" placeholder="Your Email Address">
+            <input type="text" autocomplete="off" name="name" id="name" placeholder="Your Full Name :">
+            <input type="text" autocomplete="off" name="email" id="email" placeholder="Your Email Address :">
             <textarea class="textarea" autocomplete="off" cols="30" rows="3" name="feedback" id="feedback" placeholder="Write your opinion on our Website's performance..."></textarea>
             <br>
             <button class="submit">Send Feedback</button>

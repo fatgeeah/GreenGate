@@ -1,4 +1,6 @@
-:root{  
+@import url('https://fonts.googleapis.com/css2?family=Phudu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+:root{
     --color1 :  rgb(11, 126, 69);
     --color2 :#FFF ;
     --color3 :#FF66D8 ;
@@ -17,7 +19,7 @@ body{
     height: 80px;
     background: var(--color1);
     text-align: center;
-    width: 101%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 0 5%;
@@ -26,11 +28,11 @@ body{
     margin-top: 25px;
     color: var(--color2);
     font-size: 30px;
-    font-weight: 600;
+    font-weight:700 ;
 }
 .logo2{
     margin-top: 10px;
-    margin-left: -200px;
+    margin-left: -190px;
 }
 .logo span{
     color: var(--color4);
@@ -60,6 +62,7 @@ body{
     display: none;
 }
 .dropdown_menu ul li a {
+    font-family: 'Phudu', cursive;
     color: var(--color4);
     font-size: 20px;
     font-weight: 600;
@@ -72,7 +75,7 @@ body{
     display: block;
     position: absolute;
     left: 0;
-    margin-left: 10px ;
+    margin-left: 30px ;
     top: 100%;
     width: 230px;
 }
@@ -85,10 +88,11 @@ body{
     padding: 10px;
 }
 .headers h1 {
+    font-family: 'Phudu', cursive;
     margin-top: 30px;
-    margin-right:100px;
+    margin-right:-60px;
     font-weight: 800;
-    font-size:50px;
+    font-size:60px;
     color: rgb(30, 129, 96);
 }
 .headers h2{
@@ -101,14 +105,16 @@ body{
 }
 .content1 h3 {
     margin-top: 100px;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 800;
     color: rgb(30, 129, 96);
+    font-family: 'Phudu', cursive;
 }
 .content2 h3 {
     margin-top: 100px;
-    font-size: 40px;
+    font-size: 50px;
     color: rgb(30, 129, 96);
+    font-family: 'Phudu', cursive;
 }
 .row{
     margin-left: 5px;

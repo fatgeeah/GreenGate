@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
 :root{
     --color1 :  rgb(11, 126, 69);
     --color2 :#FFF ;
     --color3 :#FF66D8 ;
     --color4 :#000000;
-    --color5 :rgb(4, 44, 4);
 
 }
 *{
@@ -30,7 +31,7 @@ body{
 }
 .logo2{
     margin-top: 10px;
-    margin-left: -220px;
+    margin-left: -215px;
 }
 .logo span{
     color: var(--color4);
@@ -60,6 +61,7 @@ body{
     display: none;
 }
 .dropdown_menu ul li a {
+    font-family: 'Phudu', cursive;
     color: var(--color4);
     font-size: 20px;
     font-weight: 600;
@@ -93,11 +95,12 @@ body{
     align-items: center;
 }
 .title{
-    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Rubik Iso', cursive;
     font-size: 60px;
     margin-right:550px;
     margin-top: 50px;
     color: var(--color4);
+    font-weight: 800;
 }.faq{
     max-width: 700px;
     margin-top: 2rem;
@@ -106,7 +109,7 @@ body{
     cursor:pointer
 }
 .question{
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Phudu', cursive;
     font-weight: 700;
     font-size: 20px;
     display: flex;
@@ -114,7 +117,7 @@ body{
     align-items: center;
 }
 .question h3 {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Phudu', cursive;
     font-size: 35px;
     font-weight: 800;
 }
