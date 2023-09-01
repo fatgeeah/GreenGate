@@ -104,7 +104,7 @@ ul{
 .rating-wrapper h1{
     text-align: center;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 40px;
     display: block;
     color: var(--color2);  
     font-family: 'Phudu', cursive;
@@ -192,4 +192,15 @@ button.not-disabled:hover{
     font-size: 20px;
     font-weight:900;
     font-family: 'Phudu', cursive;
+}
+ 
+.feedback input[type="email"]{
+    margin-top: 10px;
+    height: 50px;
+    font-size: 20px;
+    font-weight:900;
+    font-family: 'Phudu', cursive;
+}
+.emo h1{
+    font-size: 40px;
 }

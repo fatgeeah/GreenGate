@@ -6,7 +6,7 @@
         <title>Green Gate Website</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         {% load static%}
-        <link rel="stylesheet" href="{% static 'css/comments400.css' %}">
+        <link rel="stylesheet" href="{% static 'css/comments600.css' %}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     </head>
     <body>
@@ -41,21 +41,28 @@
     </div>
     <h4>Display of all the feedback recieved...</h4>
     {% for feedback in feedbacks %}
-    <form class="rating-wrapper">
+    <form action="" method="post"  class="rating-wrapper">
+        {% csrf_token %}
         <label class="rating-label"><h1>Comment left behind by {{feedback.name}}...</h1></label>
+        <br>
+        <label class="emo"><h1>This is {{feedback.name}} reaction {{feedback.rate}}</h1></label>
         <div class="feedback">
             <br><br>
             <label class="first-label">This is {{feedback.name}} Email Address:</label><h2>{{feedback.email}}</h2>
             <br>
             <br>
             <label class="second-label">Comment:</label><h3>{{feedback.feedback}}</h3>
-            <br>
-            <input type="text" autocomplete="off" name="email" id="email" placeholder="Your Reply:">
+            <br><br>
+            <input type="text" autocomplete="off" name="reply" id="reply" placeholder="Your Reply:">
+            {% comment %} {% for reply in replys %}
+            <label class="third-label"> An anonymous Reply:</label><h2>{{reply.reply}}</h2>
+            {% endfor %}  {% endcomment %}
             <br>
             <button class="submit">Delete</button>
             <button class="submit">Reply</button>
         </div>
     </form>
+    <br>
     {% endfor %} 
 
 </body>

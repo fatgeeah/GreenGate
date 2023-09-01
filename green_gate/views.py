@@ -52,18 +52,25 @@ def FAQsPage(request):
 
 def FeedbackPage(request):
     if request.method=='POST':
+        rate=request.POST.get('rate')
         name=request.POST.get('name')
         email=request.POST.get('email')
-        feedback=request.POST.get('feedback')  
-        obj=FeedBack(name=name,email=email,feedback=feedback)
+        feedback=request.POST.get('feedback')            
+        obj=FeedBack(rate=rate,name=name,email=email,feedback=feedback)
         obj.save()
         return redirect('comments')
     return render (request, 'feedback.html')
 
 def CommentsPage(request):
+        if request.method=='POST':
+            reply=request.POST.get('reply')
+            obj=Reply(reply=reply)
+            obj.save()
+            return redirect('comments')
         feedbacks = FeedBack.objects.all()
-        context = {'feedbacks':feedbacks}
-        return render (request, 'comments.html' , context)
+        replys = Reply.objects.all()
+        context = {'feedbacks':feedbacks,'replys':replys }
+        return render (request, 'comments.html' , context )
 
 def RegisterPage(request):
     if request.method=='POST':

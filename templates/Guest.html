@@ -18,7 +18,15 @@
   <ul>
     <li class="active"><a href={% url 'home'%} "index.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Green Gate</a></li>
     <li><a href={% url 'about'%} "About.html"><i class="fa fa-building" aria-hidden="true"></i> About Green Gate</a></li>
-    <li><a href="#">Green Gate's Help</a></li>
+    <li>
+      <a href="#">Green Gate's Help <i class="fas fa-caret-down"></i></a>
+
+      <div class="dropdown_menu">
+          <ul>
+              <li><a href={% url 'FAQs'%} "FAQs.html">Green Gate's FAQs</a></li>
+          </ul>
+      </div>
+  </li>
     <li>
         <a href="#"><i class="fa fa-users" aria-hidden="true"></i> Account Actions <i class="fas fa-caret-down"></i></a>
         

@@ -12,7 +12,7 @@
     </head>
     <body>
     <div class="menu_bar">
-        <h1 class="logo">Green<span>Gate</span><h2 class="logo2"><img src="{% static 'images/shopping-cart.png' %}"></h2></h1>
+        <h1 class="logo">Green<span>Gate</span><h2 class="logo2"><a href ={% url 'cart'%} "cart.html"><img src="{% static 'images/shopping-cart.png' %}"></a></h2></h1>
     <ul>
     <li class="active"><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i> Green Gate</a></li>
     <li><a href={% url 'about2'%} "About2.html"><i class="fa fa-building" aria-hidden="true"></i> About Green Gate</a></li>
